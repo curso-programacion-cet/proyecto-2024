@@ -1,0 +1,32 @@
+/* Por elemento */
+h1 {
+    color: indigo;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+p, h2, h5 {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+/* Por clase y por id */
+.titulo-pagina {
+    color: white;
+    background-color: #4b0082;
+}
+
+#titulo-general {
+    color: rgb(75,0,130);
+}
+
+.descripcion {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-style: italic;
+}
+
+#logo-cet {
+    height: 5%;
+    width: 5%;
+}
