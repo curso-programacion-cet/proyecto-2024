@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title> Cuidar el agua </title>
+        <!-- CSS Nuestro -->
+        <link rel="stylesheet" href="../css/estilos-generales.css">
+    </head>
+
+    <body>
+    
+        <header> 
+            <h1 id="titulo-general"> Proyecto de concientización: <strong>Cuidar el agua</strong> </h1>
+             <!-- MENU -->
+             <ul>
+                <li> <a href="inicio.html"> Inicio </a> </li>
+                <li> <a href="cuidados.html"> Cuidados </a> </li>
+                <li> <a href="contacto.html"> Contacto </a> </li>
+             </ul>
+        </header> 
+        
+        <main>
+            <h2 class="titulo-pagina"> Contactanos </h2>
+            <p class="descripcion"> Podes dejar tus dudas sobre los cuidados del agua a continuación </p>
+            <div>
+                <form id="formulario">
+                    <div class="filas-formulario"> 
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" name="nombre">
+                        <label for="apellido">Apellido:</label>
+                        <input type="text" name="apellido">
+                    </div>
+
+                    <div class="filas-formulario">
+                        <label for="pregunta">Pregunta:</label>
+                        <textarea name="pregunta"></textarea>
+
+                        <div class="alinear-centro">
+                            <input type="radio" name="grupo-cursada" value="1">
+                            <label for="grupo1">Grupo 1 - 17 a 19 hs</label>
+                            <input type="radio" name="grupo-cursada" value="2">
+                            <label for="grupo2">Grupo 2 - 19 a 21 hs</label>
+                        </div>
+                    </div>
+
+                    <div class="filas-formulario">
+                        <label for="fecha">Fecha:</label>
+                        <input type="date" name="fecha">
+                        <div class="alinear-centro">
+                            <input type="checkbox" name="conocia-cet" value="Si">
+                            <label for="conocia-cet"> Conocía CET antes de este curso </label>
+                        </div>
+                    </div>
+
+                    <div class="alinear-centro">
+                        <input type="submit" value="Enviar">
+                        <input type="reset" value="Reset">
+                    </div>
+                </form>
+            </div>
+            
+        </main>
+        
+        <footer>
+            <h5> Este es un proyecto de <img d="logo-cet" src="../imagenes/cet-logo.png" alt="chicas en tecnologia">
+            </h5>    
+        </footer>
+
+    </body>
+</html>
