@@ -4,6 +4,9 @@
     <head>
         <meta charset="UTF-8">
         <title> Cuidar el agua </title>
+        <!-- CSS Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
         <!-- CSS Nuestro -->
         <link rel="stylesheet" href="../css/estilos-generales.css">
     </head>
@@ -11,13 +14,31 @@
     <body>
     
         <header> 
-            <h1 id="titulo-general"> Proyecto de concientización: <strong>Cuidar el agua</strong> </h1>
+            <h1 id="titulo-general"> 
+                <i class="bi bi-droplet-half"></i> Proyecto de concientización: <strong>Cuidar el agua</strong>
+            </h1>
              <!-- MENU -->
-             <ul>
-                <li> <a href="inicio.html"> Inicio </a> </li>
-                <li> <a href="cuidados.html"> Cuidados </a> </li>
-                <li> <a href="contacto.html"> Contacto </a> </li>
-             </ul>
+             <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                  <a class="navbar-brand" id="contenedor-imagen-menu" href="inicio.html"><img id="imagen-menu" src="../imagenes/imagen-menu.jpg"></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse contenedor-items-menu" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a href="inicio.html" class="nav-link active"> Inicio </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="cuidados.html"> Cuidados </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="contacto.html"> Contacto </a> 
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
         </header> 
         
         <main>
@@ -36,7 +57,7 @@
             </div>
 
             <!-- VIDEO DE CUIDADOS DEL AGUA -->
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/WGe8WbOKXJg?si=GPiAxusfJUUgaJt1" 
+            <iframe width="500" height="300" src="https://www.youtube.com/embed/WGe8WbOKXJg?si=GPiAxusfJUUgaJt1" 
                 title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                 ="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -47,9 +68,13 @@
         </main>
         
         <footer>
-            <h5> Este es un proyecto de <img d="logo-cet" src="../imagenes/cet-logo.png" alt="chicas en tecnologia">
-            </h5>    
+            <h5> Este es un proyecto de </h5>
+            <img id="logo-cet" src="../imagenes/cet-logo.png" alt="chicas en tecnologia">
         </footer>
 
+        <!-- Scripts Bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
     </body>
 </html>
