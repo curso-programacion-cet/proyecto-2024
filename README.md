@@ -39,6 +39,19 @@ Si tienen ganas de empezar a pensar un prototipo, pueden compartirlo también, o
 
 
 ## 💡 Entrega 2: HTML y CSS (23/7)
+Sabemos que no hay una ***única*** solución correcta. Y que sea correcta no implica que utilice todas las etiquetas HTML que existan, ni que tenga un estilo diferente para cáda párrafo. 
+
+Solo a modo de ayuda, dejamos un pequeño *checklist* para la entrega:
+- [x] ¿Nuestro proyecto tiene, como mínimo, un archivo **.HTML** y uno **.CSS**?
+- [x] Nuestro archivo CSS, ¿se encuentra bien *relacionado* con el HTML?, es decir, ¿se ven **aplicados los cambios de estilo**?
+- [x] ¿Decidimos incluir *Bootsrap*? Si es así, ¿reconocemos al menos un ejemplo donde utilizamos código provisto por Bootstrap?
+- [x] ¿Nuestro código es **claro y legible** por personas que no participaron de su armado? ¿Está bien *indentado*? ¿Tiene *comentarios*?
+- [x] ¿Se encuentra el proyecto subido a GitHub? ¿Fueron la profe y/o tutoras invitadas a colaborar?
+- [x] ¿Todas las personas del equipo participaron del proyecto? ¿Hubo *commits* de cada integrante?
+
+Si cumplen ese *checklist* es muy probable que el resultado sea un gran proyecto 😎
+
+*¡Todas las preguntas son bienvenidas!* Estamos disponibles para ayudarlas en lo que necesiten 😊
 
 ## 💡 Entrega 3: Proyecto final (27/8)
 
