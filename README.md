@@ -53,7 +53,7 @@ Si cumplen ese *checklist* es muy probable que el resultado sea un gran proyecto
 
 *¡Todas las preguntas son bienvenidas!* Estamos disponibles para ayudarlas en lo que necesiten 😊
 
-## 💡 Entrega 3: Proyecto final (27/8)
+## 💡 Entrega 3: Proyecto final (29/8)
 
 
 [^1]: Los Objetivos de Desarrollo Sostenible u Objetivos Globales, también conocidos como Agenda 2030, son 17 objetivos globales interconectados diseñados para ser un «plan para lograr un futuro mejor y más sostenible para todos». Más información en https://www.un.org/sustainabledevelopment/es/objetivos-de-desarrollo-sostenible/
