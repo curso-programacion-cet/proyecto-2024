@@ -1,0 +1,17 @@
+/* Por clase y por id */
+#descripcion-pagina {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+#imagen-agua {
+    height: 30%;
+    width: 30%;
+}
+
+#boton-comenzar {
+    margin-left: 35%;
+    font-size: 20px;
+}

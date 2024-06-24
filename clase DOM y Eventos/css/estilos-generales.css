@@ -1,0 +1,111 @@
+/* Por elemento */
+h1 {
+    color: indigo;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+p, h2 {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+h5 {
+    width: auto;
+    margin-left: 40%;
+    padding: 5px;
+    float: left;
+}
+
+/* Para dejar espacio y que el footer quede pegado abajo de todo */
+body {
+    min-height: 100vh; /* vh = viewport height (altura del dispositivo) */
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    margin-top: auto; 
+}
+/****************************************************************/
+
+/* Por clase y por id */
+.titulo-pagina {
+    color: white;
+    background-color: #4b0082;
+}
+
+#titulo-general {
+    color: rgb(75,0,130);
+}
+
+.descripcion {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-style: italic;
+}
+
+#logo-cet {
+    height: 25%;
+    width: 5%;
+    padding: 5px;
+}
+
+#imagen-menu {
+    height: 100%;
+    width: 100%;
+}
+
+#contenedor-imagen-menu {
+    width: 50px;
+}
+
+#formulario {
+    border-style: solid;
+    border-color: #4b0082;
+    width: 50%;
+    margin-left: 25%;
+    padding: 10px;
+}
+
+.filas-formulario {
+    display: flex;
+    flex-direction: row; /* Esta línea en realidad no hace falta, ya que al no especificar, el valor por defecto es "row" */
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.alinear-centro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+
+.contenedor-items-menu {
+    display: flex;
+    justify-content: center;
+}
+
+.marcar-opcion {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+}
+
+#texto-gracias {
+    margin-top: 15px;
+}
+
+#seccion-media {
+    display: flex;
+    justify-content: space-around;
+}
+
+#seccion-nuevos-cuidados {
+    display: flex;
+    flex-flow: column;
+}

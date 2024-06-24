@@ -42,49 +42,40 @@
         </header> 
         
         <main>
-            <h2 class="titulo-pagina"> Contactanos </h2>
-            <p class="descripcion"> Podes dejar tus dudas sobre los cuidados del agua a continuación </p>
-            <div>
-                <form id="formulario">
-                    <div class="filas-formulario"> 
-                        <label for="nombre">Nombre:</label>
-                        <input type="text" name="nombre">
-                        <label for="apellido">Apellido:</label>
-                        <input type="text" name="apellido">
-                    </div>
-
-                    <div class="filas-formulario">
-                        <label for="pregunta">Pregunta:</label>
-                        <textarea name="pregunta"></textarea>
-
-                        <div class="marcar-opcion">
-                            <div class="alinear-centro">
-                                <input type="radio" name="grupo-cursada" value="1">
-                                <label for="grupo1">Grupo "Ada Lovelace" - 17 a 19 hs</label>
-                            </div>
-                            <div class="alinear-centro">
-                                <input type="radio" name="grupo-cursada" value="2">
-                                <label for="grupo2">Grupo "Grace Hopper" - 19 a 21 hs</label>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="filas-formulario">
-                        <label for="fecha">Fecha:</label>
-                        <input type="date" name="fecha">
-                        <div class="alinear-centro">
-                            <input type="checkbox" name="conocia-cet" value="Si">
-                            <label for="conocia-cet"> Conocía CET antes de este curso </label>
-                        </div>
-                    </div>
-
-                    <div class="alinear-centro">
-                        <input type="submit" value="Enviar"> <!-- Tip: si no queremos que se refresque la pagina al enviar, podemos poner type=button -->
-                        <input type="reset" value="Reset">
-                    </div>
-                </form>
+            <h2 class="titulo-pagina"> Cuidados </h2>
+            <div id ="lista-cuidados">
+                <ul>
+                    <li> <strong> En la ducha: </strong> Mejor la ducha que un baño de inmersión. 
+                        A su vez, no tardar mucho tiempo en la ducha </li>
+                    <li> <strong> Limpieza en la casa: </strong> Usar productos amigables con el planeta. 
+                        De este modo no se contaminan las aguas residuales. </li>
+                    <li> <strong> Limpieza en lavabos: </strong> No dejar el grifo abierto sin estar usando el agua. 
+                        Al lavarse los dientes, cerrar la canilla. </li>
+                    <li> <strong> Control de agua en las tuberías: </strong> Verifique las canillas y tuberías regularmente para encontrar fugas y realizar reparaciones.
+                        Dejar canillas medio abiertas o con goteo puede generar mucho desperdicio a la larga. </li>
+                </ul>
             </div>
-            
+
+            <div id="seccion-media">
+              <!-- VIDEO DE CUIDADOS DEL AGUA -->
+              <div id="seccion-video-youtube">
+                <iframe width="500" height="300" src="https://www.youtube.com/embed/WGe8WbOKXJg?si=GPiAxusfJUUgaJt1" 
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    ="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+
+              <div id="seccion-nuevos-cuidados">
+                <p> <strong> Escribi tus propios cuidados </strong> <br> Podes agregar mas cuidados a continuación </p>
+                <textarea id="nuevos-cuidados"></textarea>
+
+                <div id="escribir-nuevos-cuidados"> </div>
+              </div>
+            </div>
+
+            <p> 
+                Fuente: <a href="https://www.argentina.gob.ar/noticias/algunas-recomendaciones-para-cuidar-el-agua"> 
+                    https://www.argentina.gob.ar/noticias/algunas-recomendaciones-para-cuidar-el-agua </a>
+            </p>
         </main>
         
         <footer>
@@ -96,5 +87,8 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+      
+        <!-- Nuestro Script -->
+        <script src="../js/cuidados.js"> </script>
     </body>
 </html>
