@@ -44,7 +44,7 @@ Sabemos que no hay una ***única*** solución correcta. Y que sea correcta no im
 Solo a modo de ayuda, dejamos un pequeño *checklist* para la entrega:
 - [x] ¿Nuestro proyecto tiene, como mínimo, un archivo **.HTML** y uno **.CSS**?
 - [x] Nuestro archivo CSS, ¿se encuentra bien *relacionado* con el HTML?, es decir, ¿se ven **aplicados los cambios de estilo**?
-- [x] ¿Decidimos incluir *Bootsrap*? Si es así, ¿reconocemos al menos un ejemplo donde utilizamos código provisto por Bootstrap?
+- [x] ¿Decidimos incluir *Bootstrap*? Si es así, ¿reconocemos al menos un ejemplo donde utilizamos código provisto por Bootstrap?
 - [x] ¿Nuestro código es **claro y legible** por personas que no participaron de su armado? ¿Está bien *indentado*? ¿Tiene *comentarios*?
 - [x] ¿Se encuentra el proyecto subido a GitHub? ¿Fueron la profe y/o tutoras invitadas a colaborar?
 - [x] ¿Todas las personas del equipo participaron del proyecto? ¿Hubo *commits* de cada integrante?
@@ -54,6 +54,20 @@ Si cumplen ese *checklist* es muy probable que el resultado sea un gran proyecto
 *¡Todas las preguntas son bienvenidas!* Estamos disponibles para ayudarlas en lo que necesiten 😊
 
 ## 💡 Entrega 3: Proyecto final (29/8)
+En esta entrega haremos nuestros proyectos más dinámicos ⚡ Pero queda a libre elección de cada grupo, qué comportamiento desean agregar.
+
+Checklist para esta entrega:
+- [x] ¿Nuestro proyecto tiene, como mínimo, un archivo **.HTML**, uno **.CSS**, y uno **.JS**?
+- [x] Nuestro archivo JS, ¿se encuentra bien *relacionado* con el HTML?, es decir, ¿se ven **aplicados los cambios de comportamiento**? Y si imprimimos algo en la consola (mediante *console.log()*), ¿podemos visualizarlo con las herramientas del desarrollador?
+- [x] ¿Decidimos incluir *Bootstrap*? Si es así, ¿sus archivos .js se encuentran también agregados al HTML?
+- [x] ¿Qué *comportamiento* estamos aplicando mediante Javascript? ***Describanlos en su archivo README***
+> **Ejemplo:**
+>  "Cuando se clickea el botón de 'Enviar' se muestra una alerta/se cambia un texto"
+- [x] ¿Nuestro código es **claro y legible** por personas que no participaron de su armado? ¿Está bien *indentado*? ¿Tiene *comentarios*?
+- [x] ¿Todas las personas del equipo participaron del proyecto? ¿Hubo *commits* de cada integrante?
+
+
+*¡Éxitos en sus proyectos!* Esperamos que se puedan sentir orgullosas de lo logrado, y lo puedan poner en práctica disfrutando el proceso de aprender 💜
 
 
 [^1]: Los Objetivos de Desarrollo Sostenible u Objetivos Globales, también conocidos como Agenda 2030, son 17 objetivos globales interconectados diseñados para ser un «plan para lograr un futuro mejor y más sostenible para todos». Más información en https://www.un.org/sustainabledevelopment/es/objetivos-de-desarrollo-sostenible/
