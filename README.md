@@ -53,6 +53,8 @@ Si cumplen ese *checklist* es muy probable que el resultado sea un gran proyecto
 
 *¡Todas las preguntas son bienvenidas!* Estamos disponibles para ayudarlas en lo que necesiten 😊
 
+
+
 ## 💡 Entrega 3: Proyecto final (29/8)
 En esta entrega haremos nuestros proyectos más dinámicos ⚡ Pero queda a libre elección de cada grupo, qué comportamiento desean agregar.
 
