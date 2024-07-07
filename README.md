@@ -1,7 +1,7 @@
 # Curso de Programación Front-End - Chicas en Tecnología 🚀
 
 ## 💡 Entrega 1: Definición de la problemática
-En este ejemplo, basado en los *Objetivos de Desarrollo Sostenible*[^1], seguiremos como ejemplo la **Contaminación del agua**.
+En este ejemplo, basado en los *Objetivos de Desarrollo Sostenible*[^1] (especialmente el número 6: *Agua limpia y Saneamiento*), seguiremos como ejemplo la **Contaminación del agua**.
 
 Buscamos algunos datos al respecto:
    - Se estima que para el 2050, habrá en el océano más plástico que peces.
