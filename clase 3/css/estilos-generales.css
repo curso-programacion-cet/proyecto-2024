@@ -13,14 +13,12 @@ p, h2, h5 {
 /* Por clase y por id */
 .titulo-pagina {
     color: white;
-    background-color: #4b0082;
+    background-color: #b96fee;
 }
 
 #titulo-general {
     color: rgb(75,0,130);
 }
-
-
 
 .descripcion {
     font-family: Arial, Helvetica, sans-serif;
