@@ -6,7 +6,7 @@ h1 {
 }
 
 p, h2, h5 {
-    font-family: 'Courier New', Courier, monospace;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
 }
 
@@ -20,11 +20,18 @@ p, h2, h5 {
     color: rgb(75,0,130);
 }
 
+
+
 .descripcion {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     font-style: italic;
 }
+
+.prueba {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
 
 #logo-cet {
     height: 5%;
