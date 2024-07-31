@@ -38,6 +38,7 @@ Si tienen ganas de empezar a pensar un prototipo, pueden compartirlo también, o
 *Nota 2: para escribir en diferentes formatos en el archivo README.md e insertar imágenes y links, lo hice con la ayuda de [esta documentación](https://docs.github.com/es/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax). Espero que les sirva!*
 
 
+
 ## 💡 Entrega 2: HTML y CSS (23/7)
 Sabemos que no hay una ***única*** solución correcta. Y que sea correcta no implica que utilice todas las etiquetas HTML que existan, ni que tenga un estilo diferente para cáda párrafo. 
 
@@ -57,6 +58,7 @@ Si cumplen ese *checklist* es muy probable que el resultado sea un gran proyecto
 ## 💡 Entrega 3: Proyecto final (29/8)
 En esta entrega haremos nuestros proyectos más dinámicos ⚡ Pero queda a libre elección de cada grupo, qué comportamiento desean agregar.
 
+
 Checklist para esta entrega:
 - [x] ¿Nuestro proyecto tiene, como mínimo, un archivo **.HTML**, uno **.CSS**, y uno **.JS**?
 - [x] Nuestro archivo JS, ¿se encuentra bien *relacionado* con el HTML?, es decir, ¿se ven **aplicados los cambios de comportamiento**? Y si imprimimos algo en la consola (mediante *console.log()*), ¿podemos visualizarlo con las herramientas del desarrollador?
@@ -66,6 +68,8 @@ Checklist para esta entrega:
 >  "Cuando se clickea el botón de 'Enviar' se muestra una alerta/se cambia un texto"
 - [x] ¿Nuestro código es **claro y legible** por personas que no participaron de su armado? ¿Está bien *indentado*? ¿Tiene *comentarios*?
 - [x] ¿Todas las personas del equipo participaron del proyecto? ¿Hubo *commits* de cada integrante?
+
+Si cumplen ese *checklist*, y pueden hablar convencidas y contentas sobre su trabajo a lo largo del curso, es muy probable que el resultado sea un gran proyecto 😎 
 
 
 *¡Éxitos en sus proyectos!* Esperamos que se puedan sentir orgullosas de lo logrado, y lo puedan poner en práctica disfrutando el proceso de aprender 💜
