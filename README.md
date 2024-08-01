@@ -1,5 +1,6 @@
 # Curso de Programación Front-End - Chicas en Tecnología 🚀
 
+
 ## 💡 Entrega 1: Definición de la problemática
 En este ejemplo, basado en los *Objetivos de Desarrollo Sostenible*[^1] (especialmente el número 6: *Agua limpia y Saneamiento*), seguiremos como ejemplo la **Contaminación del agua**.
 
