@@ -1,6 +1,8 @@
 // Elementos del DOM
 const botonComenzar = document.getElementById("boton-comenzar");
 
+
+
 // Escuchadores de eventos
 botonComenzar.addEventListener("click", () => {
     // Podemos utilizar la propiedad location (ubicación) del objeto window (ventana)
