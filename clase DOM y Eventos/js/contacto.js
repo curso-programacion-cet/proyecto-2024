@@ -1,7 +1,7 @@
 // Elementos del DOM
 const botonEnviar = document.getElementById("boton-enviar");
 const botonReset = document.getElementById("boton-reset");
-const textoGracias = document.getElementById("texto-gracias");
+const formulario = document.getElementById("formulario");
 const inputNombre = document.getElementById("nombre");
 const inputApellido = document.getElementById("apellido");
     // Recordemos que getElementsByClassName devolvera un array, 
@@ -31,6 +31,13 @@ botonEnviar.addEventListener("click", () => {
         nombreDelGrupo = "Grace Hopper";
     }
 
+    // primero me aseguro que no exista el elemento, 
+    // porque si existe, estaremos creando uno nuevo, exactamente igual, y habrá muchos "textos-gracias"
+    borrarTextoGracias();
+    
+    let textoGracias = document.createElement("p");
+    textoGracias.id = "texto-gracias"; // agrego un id para poder luego hacer getElementById
+
     textoGracias.innerHTML = inputNombre.value + " " + inputApellido.value + ", tu mensaje fue enviado. <br> "
     + "Gracias por formar parte del grupo N° " + grupoCursada + " '" + nombreDelGrupo + "' ";
 
@@ -39,10 +46,13 @@ botonEnviar.addEventListener("click", () => {
     } else {
         textoGracias.innerHTML += "<br> ¡Bienvenida a la comunidad CET!";
     }
+
+    // agrego el nuevo elemento al final del elemento form
+    formulario.append(textoGracias);
 });
 
 botonReset.addEventListener("click", () => {
-    textoGracias.innerText = "";
+    borrarTextoGracias();
 });
 
 
@@ -61,6 +71,17 @@ inputFecha.addEventListener("change", (evento) => {
 });
 
 
+function borrarTextoGracias() {
+    // no puedo saber todavia si ya existe este elemento o no, porque lo crearemos dinamicamente
+    // aca en javascript, solo si ya se clickeo el boton de enviar
+    let textoGracias = document.getElementById("texto-gracias");
+
+    // si esta creado el parrafo con el texto agradeciendo, 
+    // lo voy a borrar en esta funcion
+    if (textoGracias) { // esto es similar a: if (textoGracias != null && textoGracias != undefined)
+        textoGracias.remove();
+    }
+}
 
 function armarElTextoDeLaFecha(textoFecha) {
     let arrayFecha = textoFecha.split("-"); // Separo el texto por el simbolo "-" y guardo elementos en un array: [2024, 12, 31]
