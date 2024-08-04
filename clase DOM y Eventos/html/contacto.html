@@ -48,9 +48,9 @@
                 <form id="formulario">
                     <div class="filas-formulario"> 
                         <label for="nombre">Nombre:</label>
-                        <input type="text" name="nombre">
+                        <input id ="nombre" type="text" name="nombre">
                         <label for="apellido">Apellido:</label>
-                        <input type="text" name="apellido">
+                        <input id ="apellido" type="text" name="apellido">
                     </div>
 
                     <div class="filas-formulario">
@@ -59,11 +59,11 @@
 
                         <div class="marcar-opcion">
                             <div class="alinear-centro">
-                                <input type="radio" name="grupo-cursada" value="1">
+                                <input type="radio" class="grupo-cursada-opciones" name="grupo-cursada" value="1">
                                 <label for="grupo1">Grupo "Ada Lovelace" - 17 a 19 hs</label>
                             </div>
                             <div class="alinear-centro">
-                                <input type="radio" name="grupo-cursada" value="2">
+                                <input type="radio" class="grupo-cursada-opciones" name="grupo-cursada" value="2">
                                 <label for="grupo2">Grupo "Grace Hopper" - 19 a 21 hs</label>
                             </div>
                         </div>
@@ -73,7 +73,7 @@
                         <label for="fecha">Fecha:</label>
                         <input type="date" name="fecha" id="fecha">
                         <div class="alinear-centro">
-                            <input type="checkbox" name="conocia-cet" value="Si">
+                            <input type="checkbox" id="conocia-cet-checkbox" name="conocia-cet">
                             <label for="conocia-cet"> Conocía CET antes de este curso </label>
                         </div>
                         <p id="texto-fecha"></p>

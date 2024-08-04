@@ -2,14 +2,43 @@
 const botonEnviar = document.getElementById("boton-enviar");
 const botonReset = document.getElementById("boton-reset");
 const textoGracias = document.getElementById("texto-gracias");
-    // Recordemos que devolvera un array, al que luego debemos recorrer para acceder a cada elemento
+const inputNombre = document.getElementById("nombre");
+const inputApellido = document.getElementById("apellido");
+    // Recordemos que getElementsByClassName devolvera un array, 
+    // al que luego debemos recorrer para acceder a cada elemento
 const filasFormulario = document.getElementsByClassName("filas-formulario");
+const inputRadioGrupoCursada = document.getElementsByClassName("grupo-cursada-opciones");
+
 const inputFecha = document.getElementById("fecha");
 const parrafoFecha = document.getElementById("texto-fecha");
+const checkboxConociaCET = document.getElementById("conocia-cet-checkbox");
+
 
 // Escuchadores de eventos
 botonEnviar.addEventListener("click", () => {
-    textoGracias.innerText = "Tu mensaje fue enviado. Gracias por contactarnos";
+    let grupoCursada;
+    for (const opcion of inputRadioGrupoCursada) {
+        if (opcion.checked) {
+            grupoCursada = opcion.value;
+        }
+    }
+
+    let nombreDelGrupo;
+    if (grupoCursada == "1") {
+        nombreDelGrupo = "Ada Lovelace";
+    }
+    if (grupoCursada == "2") {
+        nombreDelGrupo = "Grace Hopper";
+    }
+
+    textoGracias.innerHTML = inputNombre.value + " " + inputApellido.value + ", tu mensaje fue enviado. <br> "
+    + "Gracias por formar parte del grupo N° " + grupoCursada + " '" + nombreDelGrupo + "' ";
+
+    if (checkboxConociaCET.checked) {
+        textoGracias.innerHTML += "<br> ¡Me alegro que hayas vuelto a los programas de CET!";
+    } else {
+        textoGracias.innerHTML += "<br> ¡Bienvenida a la comunidad CET!";
+    }
 });
 
 botonReset.addEventListener("click", () => {
