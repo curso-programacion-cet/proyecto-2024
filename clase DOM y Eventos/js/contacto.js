@@ -4,6 +4,7 @@ const botonReset = document.getElementById("boton-reset");
 const formulario = document.getElementById("formulario");
 const inputNombre = document.getElementById("nombre");
 const inputApellido = document.getElementById("apellido");
+const inputPregunta = document.getElementById("pregunta");
     // Recordemos que getElementsByClassName devolvera un array, 
     // al que luego debemos recorrer para acceder a cada elemento
 const filasFormulario = document.getElementsByClassName("filas-formulario");
@@ -16,21 +17,15 @@ const checkboxConociaCET = document.getElementById("conocia-cet-checkbox");
 
 // Escuchadores de eventos
 botonEnviar.addEventListener("click", () => {
-    let grupoCursada;
-    for (const opcion of inputRadioGrupoCursada) {
-        if (opcion.checked) {
-            grupoCursada = opcion.value;
-        }
+    // primero voy a validar que el formulario fue completado, sino, no continuamos
+    let pasaLasValidaciones = validarInputsFormulario();
+
+    if (!pasaLasValidaciones) {
+        alert("El formulario no está completo");
+        return; // cuando ponemos "return" termina la función, por lo tanto, no vamos a ejecutar lo que sigue
     }
 
-    let nombreDelGrupo;
-    if (grupoCursada == "1") {
-        nombreDelGrupo = "Ada Lovelace";
-    }
-    if (grupoCursada == "2") {
-        nombreDelGrupo = "Grace Hopper";
-    }
-
+    // a esta altura, ya pasó las validaciones
     // primero me aseguro que no exista el elemento, 
     // porque si existe, estaremos creando uno nuevo, exactamente igual, y habrá muchos "textos-gracias"
     borrarTextoGracias();
@@ -39,7 +34,7 @@ botonEnviar.addEventListener("click", () => {
     textoGracias.id = "texto-gracias"; // agrego un id para poder luego hacer getElementById
 
     textoGracias.innerHTML = inputNombre.value + " " + inputApellido.value + ", tu mensaje fue enviado. <br> "
-    + "Gracias por formar parte del grupo N° " + grupoCursada + " '" + nombreDelGrupo + "' ";
+    + "Gracias por formar parte del grupo N° " + armarElTextoDelGrupoElegido();
 
     if (checkboxConociaCET.checked) {
         textoGracias.innerHTML += "<br> ¡Me alegro que hayas vuelto a los programas de CET!";
@@ -53,6 +48,7 @@ botonEnviar.addEventListener("click", () => {
 
 botonReset.addEventListener("click", () => {
     borrarTextoGracias();
+    parrafoFecha.innerText = ""; // texto vacío para la fecha
 });
 
 
@@ -81,6 +77,51 @@ function borrarTextoGracias() {
     if (textoGracias) { // esto es similar a: if (textoGracias != null && textoGracias != undefined)
         textoGracias.remove();
     }
+}
+
+function validarInputsFormulario() {
+    // si el nombre o el apellido o la pregunta estan vacios, NO es válido
+    if (inputNombre.value == "" || inputApellido.value == "" || inputPregunta.value == "") {
+        return false;
+    }
+
+    if (inputFecha.value == "") {
+        return false;
+    }
+    
+    // recorro las opciones a ver si alguna fue tildada, sino, NO es válido
+    let hayAlgunaOpcionElegida = false;
+    for (const opcion of inputRadioGrupoCursada) {
+        if (opcion.checked) {
+            hayAlgunaOpcionElegida = true;
+        }
+    }
+
+    if (!hayAlgunaOpcionElegida) {
+        return false;
+    }
+
+    // si llegó hasta acá, significa que pasó todas las validaciones
+    return true;
+}
+
+function armarElTextoDelGrupoElegido() {
+    let grupoCursada;
+    for (const opcion of inputRadioGrupoCursada) {
+        if (opcion.checked) {
+            grupoCursada = opcion.value;
+        }
+    }
+
+    let nombreDelGrupo;
+    if (grupoCursada == "1") {
+        nombreDelGrupo = "Ada Lovelace";
+    }
+    if (grupoCursada == "2") {
+        nombreDelGrupo = "Grace Hopper";
+    }
+
+    return grupoCursada + " '" + nombreDelGrupo + "' ";
 }
 
 function armarElTextoDeLaFecha(textoFecha) {
