@@ -5,6 +5,7 @@ const formulario = document.getElementById("formulario");
 const inputNombre = document.getElementById("nombre");
 const inputApellido = document.getElementById("apellido");
 const inputPregunta = document.getElementById("pregunta");
+
     // Recordemos que getElementsByClassName devolvera un array, 
     // al que luego debemos recorrer para acceder a cada elemento
 const filasFormulario = document.getElementsByClassName("filas-formulario");
