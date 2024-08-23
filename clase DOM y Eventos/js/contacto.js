@@ -52,7 +52,7 @@ botonReset.addEventListener("click", () => {
 });
 
 
-for (const elemento of filasFormulario) {
+for (elemento of filasFormulario) {
     elemento.addEventListener("keydown", function(evento) {
         if (evento.key == "@" || evento.key == "#" || evento.key == "$" || evento.key == "%") {
             alert("Los caracteres @, #, $ y % no se encuentran permitidos, por favor, borralos");
@@ -91,7 +91,8 @@ function validarInputsFormulario() {
     
     // recorro las opciones a ver si alguna fue tildada, sino, NO es válido
     let hayAlgunaOpcionElegida = false;
-    for (const opcion of inputRadioGrupoCursada) {
+    
+    for (opcion of inputRadioGrupoCursada) {
         if (opcion.checked) {
             hayAlgunaOpcionElegida = true;
         }
@@ -107,7 +108,7 @@ function validarInputsFormulario() {
 
 function armarElTextoDelGrupoElegido() {
     let grupoCursada;
-    for (const opcion of inputRadioGrupoCursada) {
+    for (opcion of inputRadioGrupoCursada) {
         if (opcion.checked) {
             grupoCursada = opcion.value;
         }
@@ -124,7 +125,7 @@ function armarElTextoDelGrupoElegido() {
     return grupoCursada + " '" + nombreDelGrupo + "' ";
 }
 
-function armarElTextoDeLaFecha(textoFecha) {
+function armarElTextoDeLaFecha(textoFecha) { // "2024-08-15" --> ["2024", "08", "15"]
     let arrayFecha = textoFecha.split("-"); // Separo el texto por el simbolo "-" y guardo elementos en un array: [2024, 12, 31]
     
     let numeroAnio = arrayFecha[0];
